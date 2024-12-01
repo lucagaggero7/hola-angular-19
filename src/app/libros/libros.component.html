@@ -1,0 +1,8 @@
+
+<h3>Los libros favoritos de {{username}}</h3>
+<ul>
+    @for (libro of libros; track libro.id)
+    {
+        <li (click)="fav(libro.nombre)">{{ libro.nombre }}</li>
+    }
+</ul>
